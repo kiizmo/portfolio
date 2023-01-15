@@ -1,0 +1,569 @@
+/* compatible pour tous les appareils  android */
+h2 {
+        font-size: 16px
+    }
+    
+.tiako {
+        grid-column-gap: 0px
+    }
+    
+img.tiako {
+        position: relative;
+        left: 10px
+    }
+    
+p.desc {
+        position: relative;
+        font-size:10px
+    }
+    
+p.desc-tiako {
+    font-size: 10px;
+    position: relative;
+    margin: 5px 0 0 0 
+    }
+    
+.name, .down {
+    font-size: 38px
+    }
+    
+img.love {
+    width:150px;
+    margin: 0
+    }
+.name {
+	text-align: center;
+	margin:0;
+    animation: slideUp ease .5s forwards;
+    top: 40px;
+    position: relative;
+    opacity: 0;
+    font-weight: 700;
+    }
+
+h2 {
+	margin:0;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+h2.pc {
+    margin-left: 0;
+    opacity: 0
+}
+
+h3 {
+	text-align: center;
+	text-transform: uppercase;
+    animation: slideUp ease .5s forwards;
+    animation-delay: 200ms;
+    position: relative;
+    margin: 0;
+    top: 40px
+  
+}
+
+h4 {
+    margin:0;
+    font-size: 30px;
+    text-transform: uppercase
+}
+
+h4.love {
+    animation: slideUp ease .5s forwards;
+    margin:0;
+    position: relative;
+    top: 40px;
+    animation-delay: 600ms
+}
+
+h4.about {
+    font-size: 30px;
+    text-transform: uppercase;
+    animation: slideUp ease .5s forwards;
+    position: relative;
+    top: 40px;
+    animation-delay: 400ms
+}
+
+.me {
+	margin: 30px 30px 0 30px
+}
+
+img.menu {
+	height: 18px;
+    width: 18px;
+	position: fixed ;
+    margin-top: 15px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.love {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin: 35px 35px 35px 35px;
+    
+}
+
+.left-love { grid-area: 1 / 1 / 2 / 2; }
+.right-love { 
+    grid-area: 1 / 2 / 2 / 3;
+    margin-top: 35px}
+
+
+
+.info {
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+p.cta {
+    font-weight: 400;
+    margin:0
+}
+
+svg.fleche {
+    width: 16px;
+    position:relative;
+    top: 3px
+}
+
+p.desc {
+    margin: 0;
+    font-weight:500;
+    margin-top: 5px;
+}
+
+p.desc-tiako {
+    margin: 0;
+    font-size:10px;
+    font-weight:500;
+    margin-top: 5px;
+}
+img.fleche {
+    width: 16px;
+    position: relative;
+    top:3px
+}
+
+
+a:link {
+    color:black;
+    text-decoration: none;
+}
+
+a:visited {
+    color:black;
+    text-decoration: none;
+}
+
+a:active {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    color:black;
+    text-decoration: none;
+}
+
+img.tiako{
+    width: 150px;
+    margin:0;
+    position: relative;
+    left: -1px
+}
+
+.tiako {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin: 35px 35px 20px 35px
+}
+
+.left-tiako { 
+    grid-area: 1 / 1 / 2 / 2;
+    margin-top: 10px
+    }
+
+.right-tiako { 
+    grid-area: 1 / 2 / 2 / 3;}
+
+.thx {
+    text-align: center;
+    font-weight:700;
+    font-size: 18px
+}
+
+ul.end {
+    list-style-type: none;
+    font-weight: 600;
+    text-align: center;
+    padding: 0;
+    margin:5px 0 20px 0
+}
+
+li.main {
+    font-weight: bold
+}
+
+body {
+	margin:0;
+	padding:0;
+	background-color:#ffffff;
+	font-family: 'Inter Tight', sans-serif;}
+
+@keyframes slideUp {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-40px);opacity:1;}
+}
+
+h4.melo {
+    position: relative;
+    top: 40px;
+    animation: slideUp ease .5s forwards;
+    animation-delay: 600ms
+}
+.slide-effect {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+p.desc {
+    margin: 0;
+    position: relative;
+    top: -15px
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 1s;
+    left: 0;
+    top: 0;
+}
+
+.overlay-content {
+    
+    position: relative;
+    width: 100%;
+    text-align:center;
+    height: 100%
+}
+
+.overlay a {
+    padding: 2px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    font-weight: 700;
+    top: 40px;
+    position: relative;
+    animation: slideUp ease .5s forwards;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+
+
+a.gb {
+
+    margin: 10px 0 0 0;
+    cursor: pointer;
+    font-size: 20px;
+    opacity:0
+}
+
+.contact {
+    display: inline
+}
+
+
+
+.show {display:block}
+
+h1 {
+    margin:0
+}
+
+.graphic-d {
+    padding: 0
+}
+
+
+/*parametre pour iphone petit format*/
+@media screen and (max-width: 359px) {
+    
+    img.love {
+        width: 120px
+    }
+    
+    .right-love {
+        margin-top: 20px
+    }
+    
+    p.desc {
+        font-size: 9px
+    }
+    
+    img.tiako {
+        width: 150px
+    }
+    
+    .tiako {
+        margin-right: 20px
+    }
+    
+    p.desc-tiako {
+        font-size: 9px;
+        position: relative;
+        left: -1px
+    }
+    
+    .relinker {
+        margin-top: 30%
+    }
+}
+
+@media screen and (min-width: 360px) {
+    
+    .menu {
+        margin-left: 6px;
+    }
+
+    .relinker {
+        margin-top: 50%
+    }
+}
+
+
+@media screen and (min-width: 400px) {
+    
+    img.tiako {
+        width: 200px
+    }
+    
+    .left-tiako {
+        margin-top:25px
+    }
+
+    .menu {margin-left: 8px;}
+}
+
+@media screen and (min-width: 700px) {
+    
+    img.menu {
+        width: 32px;
+        height: 32px;
+    }
+    
+
+    .name {
+        font-size: 90px;
+        animation: slideUpTabletName ease .5s forwards;
+        top: 160px
+    }
+    
+        @keyframes slideUpTabletName {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-160px);opacity:1;}
+}
+    h3 {
+        font-size: 50px;
+        animation: slideUpTabletH3 ease .5s forwards;
+        top:160px;
+        animation-delay: 0.5s
+    }
+    
+        @keyframes slideUpTabletH3 {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-160px);opacity:1;}
+}
+    h4, h4.about {
+        font-size: 40px
+    }
+    
+    h2 {
+        font-size: 25
+    }
+    
+    img.love {
+        width: 300px
+    }
+    
+    p.desc, p.desc-tiako {
+        font-size: 20px
+    }
+    
+    .info {
+        font-size: 25px
+    }
+    
+    .right-love {
+        margin-top: 100px
+    }
+    
+    p.cta {
+        font-size: 25px
+    }
+    
+    img.fleche {
+        width: 25px;
+        top: 6px
+    }
+    
+    img.tiako {
+        width: 350px
+    }
+    
+    .left-tiako {
+        margin-top: 80px;   
+    }
+    
+    .thx, .end {
+        font-size: 20px
+    }
+    
+    .relinker {
+        margin-top: 40%
+    }
+    
+    .main {
+        margin: 0 0 0 30
+    }
+}
+
+@media screen and (min-width: 1024px ) {
+    
+    img.menu {
+        width: 32px;
+        height:32px;
+        margin: 10
+    }
+    
+    .name {
+        margin-top: 275px;
+        font-size: 150px;
+        height: 160px
+    }
+    
+    h3 {
+        font-size: 70px;
+        top: 140px;}
+    
+        @keyframes slideUpTabletH3 {
+    0% {transform: translateY(0);}
+            100% {transform: translateY(-140px);opacity:1;}
+    }
+    
+    h4.about {
+        margin-top: 250px;
+        font-size: 70px
+    }
+    
+    .main {
+        margin-left: 75px
+    }
+    
+    h2 {
+        font-size: 40px
+    }
+    
+    .love {
+        margin-top: 250
+    }
+    
+    img.love {
+        width: 400px
+    }
+    
+    h4 {
+        font-size: 70px
+    }
+    
+    .info {
+        font-size: 50px
+    }
+    
+    p.cta {
+        font-size: 50px
+    }
+    
+    img.fleche {
+        position: relative;
+        width: 50px;
+        top: 10px
+    }
+    
+    .tiako {
+        margin-top: 260
+    }
+    
+    h2.pc {
+        opacity: 1
+    }
+    
+    img.tiako {
+        width: 500
+    }
+    
+    .thx, .end {
+        font-size: 25px
+    }
+
+    .relinker {
+        margin-top: 20%
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .relinker {
+        margin-top: 15%
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    
+    .name {
+        margin-top: 350px;
+        font-size: 200px;
+        height: 200px}
+
+    h4.about {
+        margin-top: 300px;
+        font-size: 90px
+        }
+
+    .love {margin-top: 400px}
+
+    img.love {width: 550px}
+
+    .right-love {margin-top: 200px}
+
+    h3 {font-size: 90px}
+
+    h2, .info {font-size: 50px}
+
+    h4 {font-size: 90px}
+
+    img.tiako {width : 700px}
+
+    .left-tiako {
+        margin-top: 150px}
+
+        .relinker {
+            margin-top: 15%
+        }
+}
