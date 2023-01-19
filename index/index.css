@@ -534,6 +534,10 @@ h2 {font-weight: 500}
     .left-tiako {margin-top: 110px}
 }
 
+
+@media screen and (min-width: 1440px) {
+    h4.about {margin-top: 350px }
+}
 @media screen and (min-width: 1500px) {
 
     .relinker {
@@ -573,4 +577,14 @@ h2 {font-weight: 500}
         .relinker {
             margin-top: 15%
         }
+}
+
+@media screen and (min-width: 1920px) {
+    h4.about {margin-top: 420px}
+}
+
+@media screen and (min-width: 2300px) {
+    .name {margin-top: 550px}
+
+    
 }
