@@ -3,13 +3,10 @@ h2 {
         font-size: 16px
     }
     
-.tiako {
-        grid-column-gap: 0px
-    }
-    
 img.tiako {
         position: relative;
-        left: 10px
+        left: 10px;
+        float: right
     }
     
 p.desc {
@@ -182,7 +179,7 @@ img.tiako{
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 0px;
-    margin: 35px 35px 20px 35px
+    margin: 35px 75px 20px 35px
 }
 
 .left-tiako { 
@@ -191,7 +188,8 @@ img.tiako{
     }
 
 .right-tiako { 
-    grid-area: 1 / 2 / 2 / 3;}
+    grid-area: 1 / 2 / 2 / 3;
+    float: right}
 
 .thx {
     text-align: center;
@@ -350,6 +348,8 @@ h2 {font-weight: 500}
     .relinker {
         margin-top: 50%
     }
+
+    .tiako {margin-right: 35px}
 }
 
 
@@ -498,7 +498,7 @@ h2 {font-weight: 500}
     }
     
     .info {
-        font-size: 50px
+        font-size: 50px;
     }
     
     p.cta {
@@ -520,7 +520,7 @@ h2 {font-weight: 500}
     }
     
     img.tiako {
-        width: 500
+        width: 550px
     }
     
     .thx, .end {
@@ -530,6 +530,8 @@ h2 {font-weight: 500}
     .relinker {
         margin-top: 20%
     }
+
+    .left-tiako {margin-top: 110px}
 }
 
 @media screen and (min-width: 1500px) {

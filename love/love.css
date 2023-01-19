@@ -422,6 +422,8 @@ img.next, img.back {
     .relinker {
         margin-top: 15%
     }
+
+    .cont-desc, .desc {height: 72px}
 }
 
 @media screen and (min-width: 1700px) {
