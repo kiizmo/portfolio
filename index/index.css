@@ -128,6 +128,8 @@ svg.fleche {
     top: 3px
 }
 
+li.menu {font-weight: 700;margin: 0}
+
 p.desc {
     margin: 0;
     font-weight:500;
@@ -205,6 +207,7 @@ ul.end {
     margin:5px 0 20px 0
 }
 
+.thx, .menu {cursor: pointer}
 li.main {
     font-weight: bold
 }
@@ -335,6 +338,7 @@ h2 {font-weight: 500}
     .left-tiako {margin:0}
 
     .right-love {margin: 15px}
+
 }
 
 @media screen and (min-width: 360px) {
