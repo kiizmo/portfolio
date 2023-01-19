@@ -85,7 +85,7 @@ a:link, a:visited, a:hover, a:active  {
 
 h1 {
     margin: 0;
-    font-size: 30px;
+    font-size: 20px;
     animation: slideUp ease .5s forwards;
     top: 40px;
     position: relative;
@@ -99,9 +99,9 @@ h1 {
 
 h2 {
     margin: 0;
-    text-transform: uppercase;
     font-size: 18px;
-    height: 150px;
+    font-weight: 500;
+    height: auto
 }
 
 .goto {
@@ -127,7 +127,6 @@ h2 {
     }
     .image { 
         grid-area: 1 / 1 / 2 / 2;
-        height: 240px;
         text-align: center;}
 
     .cont-title {
@@ -135,36 +134,30 @@ h2 {
         text-align: center;}
 
     .title {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 700;
         margin: 10px
     }
     .cont-desc { grid-area: 3 / 1 / 4 / 2; }
   
     .desc {
-        text-transform: uppercase;
         text-align: center;
         font-size: 20px;
-        font-weight:700
+        font-weight: 500;
+        font-size: 18px
     }
 
-img.next{
+img.next, img.back{
     position: absolute;
-    float: right;
     cursor: pointer;
+    top: 50%;
+    transform:translateY(-50%)
 }
 
-img.back {
-    position:absolute;
-    float: left;
-    cursor: pointer;
+img.back {left: -17px}
 
-}
+img.next {right: -17px}
 
-.foot {
-    width: 100%;
-position: absolute
-}
 ul.cta {
     list-style-type: none;
     padding:0;
@@ -178,9 +171,16 @@ ul.cta li {
     
 }
 
-a.book {
+a {
     font-weight: bold
 }
+
+div.button-container {
+    position: absolute;
+
+}
+
+
 
 @media screen and (max-width: 330px) {
     .me {
@@ -188,12 +188,9 @@ a.book {
 
     h2 {
         font-size: 16px;
-        height: auto}
+        height: auto;
+        font-weight: 500}
 
-    .back, .next {
-        top: 334px;
-        position: absolute;
-        }
     
     .back {
         left: -5px
@@ -206,13 +203,18 @@ a.book {
     .overlay-content {
         top: 27%
     }
+
+    .image {
+        height: 200px
+    }
+
+    .visual  {height: 200px}
+
+    .button-container {height:200px}
     
 }
 @media screen and (min-width: 331px) and (max-width: 389px){
-    .next, .back {
-        top: 385px;
-        position: absolute
-    }
+
 
     .next {
         right: 10px
@@ -230,10 +232,6 @@ a.book {
 @media screen and (min-width: 390px){
     h2 {height: auto}
 
-    .next, .back {
-        position: absolute;
-        top: 350px}
-
     .next {
             right: 15px
     }
@@ -246,11 +244,12 @@ a.book {
         top:35%
     }
 }
-
-@media screen and (min-width: 410px) {
-    .next, .back {
-        top:345px
-    }
+@media screen and (max-width:767px){
+    .button-container{
+        width:calc(100% - 60px);
+        }
+}
+@media screen and (min-width: 410px) and (max-width: 767px) {
 
     .next {
         right: 20px
@@ -261,6 +260,13 @@ a.book {
 }
 }
 
+@media screen and (min-width:330px) and (max-width: 767px){
+    .button-container{
+        height: 240px
+    }
+
+
+}
 @media screen and (min-width: 768px){
     img.menu {
         width: 30px;
@@ -274,12 +280,12 @@ a.book {
     }
 
     h1 {
-        font-size: 50px
+        font-size: 35px
     }
 
     .me {
         margin: 30px 60px 0 60px;
-    scroll-behavior: smooth;}
+        scroll-behavior: smooth;}
 
     h2 {
         font-size: 25px
@@ -295,15 +301,12 @@ a.book {
 
     .title {
         font-weight: 700;
-        margin: 15px
+        margin: 15px;
+        font-size: 35px;
     }
   
     .desc {
         font-size: 24px;
-    }
-
-    .next, .back {
-        top: 487px
     }
 
     .back {
@@ -319,6 +322,11 @@ a.book {
         margin: 5px;
         
     }
+
+    .button-container{
+        height: 400px;
+        width: calc(100% - 120px)
+    }
 }
 
 @media screen and (min-width: 820px) {
@@ -329,11 +337,6 @@ a.book {
         height: auto
     }
 
-    .next, .back {
-        position: absolute;
-        top: 562px
-    }
-
     .back {
         left: 40px
     }
@@ -341,6 +344,8 @@ a.book {
     .next {
         right: 40px
     }
+
+    .button-container{height: 550px;}
 }
 
 @media screen and (min-width: 830px) {
@@ -351,14 +356,13 @@ a.book {
         height: auto
     }
 
-    .next, .back {
-        position: absolute;
-        top: 587px
+    .button-container{
+        height: 575px
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .name {font-size: 75px}
+    .name {font-size: 60px}
 
     h1 {
         font-size: 150px;
@@ -369,11 +373,12 @@ a.book {
     a.goto {
         opacity: 1;
         font-size: 40px;
-        font-weight:500;
-        text-transform: lowercase;}
+        font-weight:600;
+        text-transform:initial;}
+
     .carousel {
-        margin-top: 200px;
-    
+        margin-top: 300px;
+        
     }
 
     .visual {
@@ -389,10 +394,6 @@ a.book {
         font-size: 35px;
         text-align: center;}
 
-    .next, .back {
-        top: 1050px
-        }
-
     .back {
         left: 175px
     }
@@ -402,13 +403,16 @@ a.book {
     }
     
     .title {font-size: 40px}
+
+    .button-container {
+        height: 613px;
+        margin-top: 300px;
+        
+
+    }
 }
 
 @media screen and (min-width: 1480px){
-
-    .next, .back {
-        top: 1000px
-        }
 
         .title {font-size: 40px}
 
@@ -429,5 +433,7 @@ a.book {
         .next {
             right: 200px
         }
+        
+        .button-container {height:563px}
     }
     
