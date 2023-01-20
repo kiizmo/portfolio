@@ -6,7 +6,7 @@ h2 {
 img.tiako {
         position: relative;
         left: 10px;
-        float: right
+        float: left
     }
     
 p.desc {
@@ -189,7 +189,7 @@ img.tiako{
 
 .right-tiako { 
     grid-area: 1 / 2 / 2 / 3;
-    float: right}
+    float: left}
 
 .thx {
     text-align: center;
@@ -306,7 +306,7 @@ h2 {font-weight: 500}
     img.love {
         width: 120px
     }
-    
+
     .right-love {
         margin-top: 20px
     }
@@ -316,7 +316,7 @@ h2 {font-weight: 500}
     }
     
     img.tiako {
-        width: 150px
+        width: 120px
     }
     
     .tiako {
@@ -335,7 +335,6 @@ h2 {font-weight: 500}
 
     .left-tiako {margin:0}
 
-    .right-love {margin: 15px}
 
 }
 
@@ -350,20 +349,25 @@ h2 {font-weight: 500}
     }
 
     .tiako {margin-right: 35px}
+
+    .right-tiako {margin-top: 35px}
 }
 
 
 @media screen and (min-width: 400px) {
     
-    img.tiako {
-        width: 200px
+    img.tiako, img.love {
+        width: 180px
     }
     
     .left-tiako {
         margin-top:40px
     }
 
+    .right-love {margin-top: 80px}
     .menu {margin-left: 8px;}
+    
+    .right-tiako {margin-top: 85px}
 }
 
 @media screen and (min-width: 700px) {
@@ -406,7 +410,9 @@ h2 {font-weight: 500}
     img.love {
         width: 300px
     }
-    
+
+    .tiako {margin-top:0}
+
     p.desc, p.desc-tiako {
         font-size: 20px
     }
@@ -429,7 +435,7 @@ h2 {font-weight: 500}
     }
     
     img.tiako {
-        width: 350px
+        width: 300px
     }
     
     .left-tiako {
@@ -445,11 +451,21 @@ h2 {font-weight: 500}
     }
     
     .main {
-        margin: 0 0 0 30
+        margin: 0 30px 0 30px
     }
+
+    .right-tiako {margin-top: 150px}
 }
 
-@media screen and (min-width: 1024px ) {
+
+@media screen and (min-width: 900px) {
+    img.love, img.tiako {width: 400PX}
+
+    .right-tiako {margin-top: 200px}
+
+    .right-love {margin-top: 180px}
+}
+@media screen and (min-width: 1280px ) {
     
     img.menu {
         width: 32px;
@@ -478,7 +494,7 @@ h2 {font-weight: 500}
     }
     
     .main {
-        margin-left: 75px
+        margin: 0 75px 0 75px
     }
     
     h2 {
@@ -490,7 +506,7 @@ h2 {font-weight: 500}
     }
     
     img.love {
-        width: 400px
+        width: 450px
     }
     
     h4 {
@@ -512,7 +528,8 @@ h2 {font-weight: 500}
     }
     
     .tiako {
-        margin-top: 260
+        margin-top: 130px;
+        margin-bottom: 100px
     }
     
     h2.pc {
@@ -520,7 +537,7 @@ h2 {font-weight: 500}
     }
     
     img.tiako {
-        width: 550px
+        width: 450px
     }
     
     .thx, .end {
@@ -532,11 +549,20 @@ h2 {font-weight: 500}
     }
 
     .left-tiako {margin-top: 110px}
+
+    .love {margin-top: 300px}
+
+    .right-love {margin-top: 150px}
+
 }
 
 
 @media screen and (min-width: 1440px) {
     h4.about {margin-top: 350px }
+
+    img.tiako {width: 540px}
+
+    .tiako {margin-bottom: 65px}
 }
 @media screen and (min-width: 1500px) {
 
@@ -581,10 +607,26 @@ h2 {font-weight: 500}
 
 @media screen and (min-width: 1920px) {
     h4.about {margin-top: 420px}
+
+    img.tiako {width: 720px}
+
+    .right-tiako {margin-top: 350px}
+
+    .right-love {margin-top: 270px}
 }
 
 @media screen and (min-width: 2300px) {
     .name {margin-top: 550px}
 
-    
+    h4.about {margin-top: 550px}
+
+    .love {margin-top: 700px}
+
+    img.love, img.tiako {width: 850px}
+
+    .right-love {margin-top: 400px}
+
+    .tiako {margin-top: 300px}
+
+    .tiako {margin-bottom: 240px}
 }
