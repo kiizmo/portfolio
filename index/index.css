@@ -54,7 +54,8 @@ h3 {
     animation-delay: 200ms;
     position: relative;
     margin: 0;
-    top: 40px
+    top: 40px;
+    
   
 }
 
@@ -465,8 +466,13 @@ h2 {font-weight: 500}
 
     .right-love {margin-top: 180px}
 }
+
+@media screen and (max-width: 1279px){
+    h3 {display:none}
+}
 @media screen and (min-width: 1280px ) {
     
+    h3 {opacity: 1}
     img.menu {
         width: 32px;
         height:32px;
